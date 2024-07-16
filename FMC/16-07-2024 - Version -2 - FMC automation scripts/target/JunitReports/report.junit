@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="36.378" tests="6" skipped="0" failures="5" errors="0">
+<testcase classname="Login functionality" name="Given User navigates to Login page" time="0.026">
+</testcase>
+<testcase classname="Login functionality" name="Login with valid credentials" time="3.62">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at stepdefinitions.Login.User_enters_valid_email_address_into_email_field(Login.java:27)
+	at ✽.User enters valid email address "nagaraju.adoni@effiasoft.com"	into email field(file:///C:/Automation/FMCnew/src/test/resources/features/Login.feature:10)
+]]>
+</failure>
+<system-out><![CDATA[
+When User enters valid email address "nagaraju.adoni@effiasoft.com"	into email field.failed
+And Enters valid password "Hmastest" into password field....................skipped
+And Clicks on Login button..................................................skipped
+Then User should get verification code sent to registered email address.....skipped
+When User enters the verification code......................................skipped
+And Clicks on submit button.................................................skipped
+Then User should be able to login successfully..............................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality" name="Login with invalid credentials" time="3.273">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at stepdefinitions.Login.user_enters_invalid_email_address_into_email_field(Login.java:131)
+	at ✽.User enters invalid email address "raju@gmail.com" into email field(file:///C:/Automation/FMCnew/src/test/resources/features/Login.feature:22)
+]]>
+</failure>
+<system-out><![CDATA[
+When User enters invalid email address "raju@gmail.com" into email field....failed
+And Enters invalid password "Ad@12345678" into password field...............skipped
+And Clicks on Login button..................................................skipped
+Then User should get a proper warning message...............................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality" name="Login with valid email address and invalid password" time="23.619">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at stepdefinitions.Login.User_enters_valid_email_address_into_email_field(Login.java:27)
+	at ✽.User enters valid email address "nagaraju.adoni@effiasoft.com"	into email field(file:///C:/Automation/FMCnew/src/test/resources/features/Login.feature:30)
+]]>
+</failure>
+<system-out><![CDATA[
+When User enters valid email address "nagaraju.adoni@effiasoft.com"	into email field.failed
+And Enters invalid password "12345678" into password field..................skipped
+And Clicks on Login button..................................................skipped
+Then User should get a proper warning message...............................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality" name="Login with invalid email address and valid password" time="3.363">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at stepdefinitions.Login.user_enters_invalid_email_address_into_email_field(Login.java:131)
+	at ✽.User enters invalid email address "raju@gmail.com" into email field(file:///C:/Automation/FMCnew/src/test/resources/features/Login.feature:38)
+]]>
+</failure>
+<system-out><![CDATA[
+When User enters invalid email address "raju@gmail.com" into email field....failed
+And Enters valid password "Ad@12345678" into password field.................skipped
+And Clicks on Login button..................................................skipped
+Then User should get a proper warning message...............................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality" name="Login without providing any credentials" time="2.005">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at stepdefinitions.Login.user_dont_enter_any_credentials(Login.java:159)
+	at ✽.User dont enter any credentials(file:///C:/Automation/FMCnew/src/test/resources/features/Login.feature:46)
+]]>
+</failure>
+<system-out><![CDATA[
+When User dont enter any credentials........................................failed
+And Clicks on Login button..................................................skipped
+Then User should get the proper warning message.............................skipped
+]]></system-out>
+</testcase>
+</testsuite>
