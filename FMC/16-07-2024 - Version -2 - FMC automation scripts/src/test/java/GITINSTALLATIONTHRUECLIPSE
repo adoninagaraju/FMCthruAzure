@@ -1,0 +1,12 @@
+Step 1 : create new account signup in github application
+Step 2: create new repositroy in github. It will generate repository URL Eg: https://github.com/adoninagaraju/FMC.git
+Step 3: Install git plugin in eclipse by 
+Market place -->Egit-git integration with eclipse -->install
+Step 4: Create/Clone git repository in Eclipse 
+In search option search for GIT repositiries and at aright side clone a git repository it will ask URL - provide the remote repository url
+Step 5: Select project in eclipse and select team and click on share project and then select git repository from dropdown and then click on finish
+Click on teams and then click on commit everyday once u modify the code -- till now we have commited to local repository
+Step 6: Commit and push the project Git HUB respositories by
+Select your project and right click and then select teams and then commit and then select all fiels from unstaged changes box 
+to staged box by dragging and then click on commit & push
+Note: if you are getting error while entering the pasword go to developer settigns in github from settings nad then click on token system and then copy that url and then paste it in password
